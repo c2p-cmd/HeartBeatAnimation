@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ZStack {
+                switch colorScheme {
+                case .light:
+                    Color.white
+                        .ignoresSafeArea()
+                case .dark:
+                    Color.black
+                        .ignoresSafeArea()
+                default:
+                    Color.accentColor
+                }
+                
+                HeartView()
+            }
+            .padding(.horizontal)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Heart Animation")
         }
-        .padding()
     }
 }
 
