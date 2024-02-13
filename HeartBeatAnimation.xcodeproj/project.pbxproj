@@ -11,6 +11,8 @@
 		0044DFD72B7B889B00DA2F0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044DFD62B7B889B00DA2F0D /* ContentView.swift */; };
 		0044DFD92B7B889C00DA2F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0044DFD82B7B889C00DA2F0D /* Assets.xcassets */; };
 		0044DFDC2B7B889C00DA2F0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0044DFDB2B7B889C00DA2F0D /* Preview Assets.xcassets */; };
+		0044DFE52B7B88C500DA2F0D /* HeartParticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044DFE42B7B88C500DA2F0D /* HeartParticles.swift */; };
+		0044DFE82B7B95F500DA2F0D /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044DFE72B7B95F500DA2F0D /* HeartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0044DFD82B7B889C00DA2F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0044DFDB2B7B889C00DA2F0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0044DFDD2B7B889C00DA2F0D /* HeartBeatAnimation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartBeatAnimation.entitlements; sourceTree = "<group>"; };
+		0044DFE42B7B88C500DA2F0D /* HeartParticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartParticles.swift; sourceTree = "<group>"; };
+		0044DFE72B7B95F500DA2F0D /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		0044DFD32B7B889B00DA2F0D /* HeartBeatAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0044DFE62B7B95E500DA2F0D /* Views */,
+				0044DFE32B7B88B800DA2F0D /* Models */,
 				0044DFD42B7B889B00DA2F0D /* HeartBeatAnimationApp.swift */,
 				0044DFD62B7B889B00DA2F0D /* ContentView.swift */,
 				0044DFD82B7B889C00DA2F0D /* Assets.xcassets */,
@@ -67,6 +73,22 @@
 				0044DFDB2B7B889C00DA2F0D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0044DFE32B7B88B800DA2F0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0044DFE42B7B88C500DA2F0D /* HeartParticles.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0044DFE62B7B95E500DA2F0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0044DFE72B7B95F500DA2F0D /* HeartView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0044DFD72B7B889B00DA2F0D /* ContentView.swift in Sources */,
+				0044DFE82B7B95F500DA2F0D /* HeartView.swift in Sources */,
+				0044DFE52B7B88C500DA2F0D /* HeartParticles.swift in Sources */,
 				0044DFD52B7B889B00DA2F0D /* HeartBeatAnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +311,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.thakur.HeartBeatAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,8 +341,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.thakur.HeartBeatAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
